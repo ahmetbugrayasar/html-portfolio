@@ -1,0 +1,17 @@
+html{
+    background-color: black;
+    color:white;
+}
+h1{
+    font-family: 'Libre Baskerville', serif;
+}
+.meme{
+    width: 50%;
+    margin-left: 25%;
+    height: fit-content;
+    text-align: center;
+}
+#kitty{
+    border: 5px solid white;
+    width:100%;
+}
