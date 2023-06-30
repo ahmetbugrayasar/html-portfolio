@@ -7,28 +7,40 @@
     <title>My Resume</title>
 </head>
 <body>
-    <h1>Welcome to My Realm!</h1>
-    <h2>I'm a developer</h2>
-    <div id="img-box"><img src="assets/images/CVfoto.PNG" height="200" alt="It's me from a concert in which I've played guitar.">
-        <button id="kitty-button" link><a href="meme/">Cat Meme</a></button></div>
+    <div id="menu">
+        <a class="menu-item" href= "./">Main Page</a>
+        <a class="menu-item" href="meme">Cat Meme</a>
+        
+    </div>
+    <div id="introduction-text"><h1>Welcome to My Realm!</h1>
+        <h2>I'm a developer</h2>
+        <div class="img-box">
+            <img src="assets/images/CVfoto.PNG" height="200" alt="It's me from a concert in which I've played guitar.">
+            <button id="kitty-button" link><a href="meme/">Cat Meme</a></button>
+        </div>
     
-    <p>Hello, my name is Ahmet Buğra Yaşar,
-        and I am a highly motivated and dedicated software developer
-        with a passion for cutting-edge technologies. 
-        <br>Currently pursuing a Bachelor's degree in Computer Engineering at Çanakkale Onsekiz Mart University,
-         I have a strong foundation in programming,
-         specializing in Python, Qiskit, C#, and the .NET Framework.</p>
-    <hr/>
-
-    <h2>Education</h2>
-    <ul>
-        <li>Çanakkale Onsekiz Mart University</li>
-        <p>BsC in Computer Engineering 2021-2024</p>
-        <li>Eskişehir Osmangazi University - Computer Engineering</li>
-        <p>BsC in Computer Engineering 2018-2021. I've transferred to COMU from here for work reasons.</p>
-    </ul>
+       
+        <p>Hello, my name is Ahmet Buğra Yaşar,
+            and I am a highly motivated and dedicated software developer
+            with a passion for cutting-edge technologies. 
+            <br>Currently pursuing a Bachelor's degree in Computer Engineering at Çanakkale Onsekiz Mart University,
+             I have a strong foundation in programming,
+             specializing in Python, Qiskit, C#, and the .NET Framework.</p>
+        <hr/>
+    </div>
     
-    <h2>Work Work</h2>
+    
+    
+    <div id="education-text"><h2 class="title">Education</h2>
+        <ul>
+            <li>Çanakkale Onsekiz Mart University</li>
+            <p>BsC in Computer Engineering 2021-2024</p>
+            <li>Eskişehir Osmangazi University - Computer Engineering</li>
+            <p>BsC in Computer Engineering 2018-2021. I've transferred to COMU from here for work reasons.</p>
+        </ul></div>
+    
+    <div id="work-text">
+        <h2 class="title">Work Work</h2>
     <img src="assets/images/peon.jpg" height="200" alt="Peon from WC3 with iconic line 'Work Work' ">
     <ol>
         <li><h3>Nara Educational Technologies Inc.</h3></li>
@@ -58,60 +70,67 @@ Quantum Information Technologies</h3></li>
                 <li>Communicated with highly possible clients with most of them ending 1 signature away from completion because no Paypal in Turkey, disabling us from completing transactions.</li>
             </ul>
     </ol>
-    
-    <h2>Skills</h2>
-    <img src="assets/images/catprg.jpg" height=200 alt="A Cat using a laptop and a mouse">
-    <ul><h3>Development</h3>
-        <li>.Net Framework</li>
+    </div>
+   
+    <div id="skills-text"><h2 class="title">Skills</h2>
+        
+        <div class="img-box"><img src="assets/images/catprg.jpg" height=200 alt="A Cat using a laptop and a mouse">
+            <h3 class="title">Development</h3></div>
         <ul>
-            <li>Can build applications using MVVM and MVC architectures and maintain them</li>
-            <li>Have experience with CI/CD pipelines and Azure DevOps for automated builds, testing and deployment for .NET applications</li>
-            <li>Understand and apply design patterns like Singleton, Factory and Dependency Injection, allowing for a maintainable and scalable codebase</li>
-            <li>Have the habit of using XML tags for documentation so that team members can collab easily.</li>
+            <li>.Net Framework</li>
+            <ul>
+                <li>Can build applications using MVVM and MVC architectures and maintain them</li>
+                <li>Have experience with CI/CD pipelines and Azure DevOps for automated builds, testing and deployment for .NET applications</li>
+                <li>Understand and apply design patterns like Singleton, Factory and Dependency Injection, allowing for a maintainable and scalable codebase</li>
+                <li>Have the habit of using XML tags for documentation so that team members can collab easily.</li>
+            </ul>
+            <li>Unity</li>
+            <ul>
+                <li>Strong knowledge of Unity and Unity3D software</li>
+                <li>Experience with scripting, textures, animation, GUI styles, user session management, optimizing memory and space usage</li>
+                <li>Excellent knowledge of designing for AR</li>
+                <li>Basic knowledge of VR/MR</li>
+                <li>Basic knowledge of softwares Blender & AutoCAD</li>
+                <li>Can deploy optimized AR solutions for iOS and Android</li>   
+            </ul>
         </ul>
-        <li>Unity</li>
+        <img src="assets/images/catinasuit.jpg" width="265" alt="A black&white cat in a black&white suit">
+        <ul><h3 class="title">Social Skills</h3>
+            <li><h4>Bilingual (English & Turkish)</h4></li>
+            <ul>
+                <li>Native Turkish speaker with advanced fluency in English, demonstrating strong linguistic abilities.</li>
+                <li>Effective communication in technical, academic, and professional settings, including presenting research findings and writing technical documents.</li>
+                <li>Engaging in multicultural environments and successfully collaborating with international clients and stakeholders.</li>
+                <li>Conversational English proficiency, fostering meaningful discussions and establishing rapport with individuals from diverse backgrounds.</li>
+            </ul>
+                
+        </ul></div>
+    <div id="achievements-text"><h2 class="title">Achievements & Research</h2>
         <ul>
-            <li>Strong knowledge of Unity and Unity3D software</li>
-            <li>Experience with scripting, textures, animation, GUI styles, user session management, optimizing memory and space usage</li>
-            <li>Excellent knowledge of designing for AR</li>
-            <li>Basic knowledge of VR/MR</li>
-            <li>Basic knowledge of softwares Blender & AutoCAD</li>
-            <li>Can deploy optimized AR solutions for iOS and Android</li>   
-        </ul>
-    </ul>
-    <img src="assets/images/catinasuit.jpg" width="265" alt="A black&white cat in a black&white suit">
-    <ul><h3>Social Skills</h3>
-        <li><h4>Bilingual (English & Turkish)</h4></li>
-        <ul>
-            <li>Native Turkish speaker with advanced fluency in English, demonstrating strong linguistic abilities.</li>
-            <li>Effective communication in technical, academic, and professional settings, including presenting research findings and writing technical documents.</li>
-            <li>Engaging in multicultural environments and successfully collaborating with international clients and stakeholders.</li>
-            <li>Conversational English proficiency, fostering meaningful discussions and establishing rapport with individuals from diverse backgrounds.</li>
-        </ul>
-            
-    </ul>
-<h2>Achievements & Research</h2>
-    <ul>
+        
+            <li>Presented Paper on “Electronic signature and electronic certificate generation using
+    complex numbers” </li>
+    <small>ICPAM - Van 2022</small>
+    <li>QSilver Certificate</li>
+    <small>QTurkey 2023 QSilver Workshop</small>
+        </ul> 
     
-        <li>Presented Paper on “Electronic signature and electronic certificate generation using
-complex numbers” </li>
-<small>ICPAM - Van 2022</small>
-<li>QSilver Certificate</li>
-<small>QTurkey 2023 QSilver Workshop</small>
-    </ul> 
-    
-    <h3><a href="public/movies.html">Movie Ranking Project</a></h3>
-    <img src="assets/images/movie-ranking.png" height="200" alt="Movie ranking project preview">
-    <h3><a href="public/birthday.html">Birthday Invitation Project</a></h3>
-    <img src="assets/images/birthday-invite.png" height="200" alt="Birthday Project Preview">
+    <div id="portfolio-text">
+        <h2 class="title">Portfolio</h2>
+        <h3><a href="public/movies.html">Movie Ranking Project</a></h3>
+        <img src="assets/images/movie-ranking.png" height="200" alt="Movie ranking project preview">
+        <h3><a href="public/birthday.html">Birthday Invitation Project</a></h3>
+        <img src="assets/images/birthday-invite.png" height="200" alt="Birthday Project Preview">
+        <hr/>
+        <a href="public/about.html">About me</a>
+        <a href="public/contact.html">Contact me!</a></div>
+        </div>
 
-    <hr/>
-    <a href="public/about.html">About me</a>
-    <a href="public/contact.html">Contact me!</a>
 
-    <footer>
-        <small>Ahmet Buğra Yaşar @2023</small>
-    </footer>
+<div id="footer-div"><footer>
+    <small>Ahmet Buğra Yaşar @2023</small>
+</footer></div>
+     
 </body>
 </html>
 
