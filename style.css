@@ -1,12 +1,22 @@
 @keyframes button-shape-transition{
     from{border-radius: 0px;}
-    to{border-radius: 50%;}
+    to{border-radius: 100%;}
 }
-#id{
-    color: blueviolet;
-    background-color: blue;
+#img-box{
+    width: 100%;
+    height: auto;
     
 }
-#id:hover{
-    animation:button-shape-transition;
+#kitty-button{
+    color: white;
+    background-color: oldlace;
+    width: 100px;
+    height: auto;
+    margin-left: 25%;
+    
+}
+#kitty-button:hover{
+    animation-name:button-shape-transition;
+    animation-duration:0.5s;
+    border-radius: 100%;
 }
