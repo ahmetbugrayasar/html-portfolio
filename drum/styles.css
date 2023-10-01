@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #283149;
+  font-family: "Arvo", cursive;
 }
 
 h1 {
@@ -63,6 +64,50 @@ footer {
   color: red;
 }
 
+.container{
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.grid-container {
+  display: grid;
+  gap: 20px; /* Adjust this to add spacing between the boxes */
+  max-width: 80%; /* Adjust this to control the width of the grid container */
+  background-color: #4E5152;
+  padding: 2%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  gap: 1px; /* Adjust this to add spacing between the header and the boxes */
+  align-items: center;
+}
+
+.header {
+  background-color: #444;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.box {
+  border-radius: 15%;
+  display: inline-flex;
+  background-color: #FFF;
+  /* You can set the box size and aspect ratio here */
+  /* For example: */
+  width: 50px;
+  height: 30px;
+  cursor: pointer; /* Add this to change the cursor to a pointer on hover */
+}
+
 .drum {
   outline: none;
   border: 10px solid #404B69;
@@ -79,4 +124,38 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.sequencer {
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.drum-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.drum-button {
+  padding: 10px 20px;
+}
+
+.steps {
+  display: flex;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.step.active {
+  background-color: #1E90FF; /* You can choose any color you like for the active steps */
 }
