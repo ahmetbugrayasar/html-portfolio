@@ -1,9 +1,9 @@
-import * as THREE from '../../libs/three/three.module.js';
-import { GLTFLoader } from '../../libs/three/jsm/GLTFLoader.js';
-import { DRACOLoader } from '../../libs/three/jsm/DRACOLoader.js';
-import { RGBELoader } from '../../libs/three/jsm/RGBELoader.js';
-import { ARButton } from '../../libs/ARButton.js';
-import { LoadingBar } from '../../libs/LoadingBar.js';
+import * as THREE from './../libs/three/three.module.js';
+import { GLTFLoader } from './../libs/three/jsm/GLTFLoader.js';
+import { DRACOLoader } from './../libs/three/jsm/DRACOLoader.js';
+import { RGBELoader } from './../libs/three/jsm/RGBELoader.js';
+import { ARButton } from './../libs/ARButton.js';
+import { LoadingBar } from './../libs/LoadingBar.js';
 
 class App{
 	constructor(){
@@ -14,7 +14,7 @@ class App{
         
         this.loadingBar = new LoadingBar();
 
-		this.assetsPath = '../../assets';
+		this.assetsPath = './../assets/';
         
 		this.camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 20 );
 		this.camera.position.set( 0, 0, 0 );
@@ -52,7 +52,7 @@ class App{
         
         const self = this;
         
-        loader.load( '../../assets/hdr/venice_sunset_1k.hdr', ( texture ) => {
+        loader.load( './../assets/hdr/venice_sunset_1k.hdr', ( texture ) => {
           const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
           pmremGenerator.dispose();
 
@@ -72,7 +72,7 @@ class App{
     loadCamera(){
 	    const loader = new GLTFLoader().setPath(this.assetsPath);
         const dracoLoader = new DRACOLoader();
-        dracoLoader.setDecoderPath( '../../libs/three/js/draco/' );
+        dracoLoader.setDecoderPath( './../libs/three/js/draco/' );
         loader.setDRACOLoader( dracoLoader );
 		const self = this;
 		
